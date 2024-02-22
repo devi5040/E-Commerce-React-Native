@@ -1,6 +1,8 @@
 # E-Commerce-React-Native
 
-#npx create-expo-app <app_name>
+# npx create-expo-app <app_name>
+
+### If git push not working ------->   git push --set-upstream origin <branch-name>
 
 ##Custom fonts not loaded for version > 0.60
 
