@@ -28,12 +28,12 @@ const BottomTabNavigation = () => {
         name="Home"
         component={Home}
         options={{
-          tabBarIcon: (focus) => {
+          tabBarIcon: ({ focused }) => {
             return (
               <Ionicons
-                name={focus ? "home" : "home-outline"}
+                name={focused ? "home" : "home-outline"}
                 size={24}
-                color={focus ? COLORS.primary : COLORS.gray}
+                color={focused ? COLORS.primary : COLORS.gray}
               />
             );
           },
@@ -43,12 +43,12 @@ const BottomTabNavigation = () => {
         name="Search"
         component={Search}
         options={{
-          tabBarIcon: (focus) => {
+          tabBarIcon: ({ focused }) => {
             return (
               <Ionicons
                 name={"search-sharp"}
                 size={24}
-                color={focus ? COLORS.primary : COLORS.gray}
+                color={focused ? COLORS.primary : COLORS.gray}
               />
             );
           },
@@ -58,12 +58,12 @@ const BottomTabNavigation = () => {
         name="Profile"
         component={Profile}
         options={{
-          tabBarIcon: (focus) => {
+          tabBarIcon: ({ focused }) => {
             return (
               <Ionicons
-                name={focus ? "person" : "person-outline"}
+                name={focused ? "person" : "person-outline"}
                 size={24}
-                color={focus ? COLORS.primary : COLORS.gray}
+                color={focused ? COLORS.primary : COLORS.gray}
               />
             );
           },
