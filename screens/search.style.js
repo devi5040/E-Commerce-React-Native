@@ -35,5 +35,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  searchImage: {
+    resizeMode: "contain",
+    width: SIZES.width - 50,
+    height: SIZES.height - 200,
+    opacity: 0.9,
+  },
 });
 export default styles;

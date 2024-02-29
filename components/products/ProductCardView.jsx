@@ -10,14 +10,14 @@ const ProductCardView = ({ item }) => {
   return (
     <TouchableOpacity
       onPress={() => {
-        navigation.navigate("ProductDetails");
+        navigation.navigate("ProductDetails", { item });
       }}
     >
       <View style={styles.container}>
         <View style={styles.imageContainer}>
           <Image
             source={{
-              uri: `${item.imageUrl}`,
+              uri: item.imageUrl,
             }}
             style={styles.image}
           />
@@ -30,7 +30,7 @@ const ProductCardView = ({ item }) => {
             {item.supplier}
           </Text>
           <Text style={styles.price} numberOfLines={1}>
-            {item.price}
+            ${item.price}
           </Text>
         </View>
         <TouchableOpacity style={styles.addBtn}>
