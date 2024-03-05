@@ -22,7 +22,7 @@ const Search = () => {
   const handlePress = async () => {
     try {
       const response = await axios.get(
-        `http://192.168.1.57:3000/api/products/search/Teak`
+        `http://192.168.1.19:3000/api/products/search/Teak`
       );
       setSearchResult(response.data);
     } catch (error) {

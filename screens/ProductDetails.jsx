@@ -20,7 +20,6 @@ import { useRoute } from "@react-navigation/native";
 const ProductDetails = ({ navigation }) => {
   const route = useRoute();
   const { item } = route.params;
-  console.log(item);
 
   const [count, setCount] = useState(1);
   const increment = () => {
